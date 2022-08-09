@@ -6,7 +6,7 @@ const {poolConfig} = require('./options.js');
 Local Pool Definition*/
 
 if (process.env.OS === 'Windows_NT') {
-  poolOptions = poolConfig.local;
+  poolOptions = poolConfig.heroku;
 } else {
   poolOptions = poolConfig.heroku;
 }
